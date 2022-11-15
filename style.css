@@ -1,0 +1,105 @@
+body{
+    background:linear-gradient(to right,rgb(255,255,255),rgb(79, 86, 92));
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+}
+
+.container{
+    width:45rem;
+    height:10rem;
+    padding:1rem;
+    border:1px solid whitesmoke;
+    margin:15rem auto 5rem auto;
+}
+
+.container input{
+    width:10.5rem;
+    margin: 1.5rem;
+    padding:0.33rem;
+    border-radius: 0.2rem;
+}
+
+.container input:hover{
+    border-color:lightblue;
+    box-shadow: 5px 1px 5px blue;
+}
+.container input:focus{
+    outline: none;
+}
+
+.inputForm{
+    display:inline-block;
+}
+.inputForm span{
+    display:block;
+    margin-left:5rem;
+}
+.headers{
+    color:blue;
+    font-weight:600;
+}
+
+#submitBtn{
+    padding:0.5rem 1rem;
+    margin:0 20rem;
+    background-color: lightgreen;
+    border-radius: 1rem;
+}
+
+#outputArea{
+    text-align: center;
+    font-weight: 700;  
+}
+
+
+@media(max-width:1279px){
+    .container{
+        width:45rem;
+    }
+}
+
+@media(max-width:933px){
+    .container{
+        width:30rem;
+        height:20rem;
+    }
+
+    .inputForm{
+        display: block;
+    }
+    .inputForm span{
+        margin-left:1rem;
+    }
+    .container input{
+        width:26rem;
+    }
+    #submitBtn{
+        margin:0 12rem;
+    }
+    
+    @media(max-width:554px) {
+        .container{
+            width:25rem;
+            height:20rem;
+        } 
+        .container input{
+            width:20rem;
+        }
+        #submitBtn{
+            margin:0 10rem;
+        }
+    }
+
+    @media(max-width:454px){
+        .container{
+            width:20rem;
+            height:20rem;
+        } 
+        .container input{
+            width:15rem;
+        }
+        #submitBtn{
+            margin:0 8rem;
+        }
+    }
+}
